@@ -1,8 +1,29 @@
-# React + Vite
+#  My First Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Website for a personal trainer
 
-Currently, two official plugins are available:
+### MVP for website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [x] Create a functioning NavBar 
+- [x] Have a 'homepage', 'contact' , and an 'about' page
+- [] Have decent styling so it is atractive to the user 
+- [] Add content to each of the pages on the website
+- [] Add images to the pages of website
+
+...List will be updated throughout developement
+
+### Tools 
+
+- Vite 
+- React 
+- TailWind CSS 
+
+### Purpose
+
+To create a website for a personal trainer I worked with during
+a medical study. This will be my first project after graduating 
+from my coding bootcamp at Flatiron school. 
+
+
+
+
