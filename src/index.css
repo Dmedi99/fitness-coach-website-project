@@ -27,19 +27,23 @@
 display: flex;
 flex-direction: column;
 align-items: center;
-background-color:#333;
+background-color:navy;
 padding: 10px;
-width: 300px;
+border: 2px grey;
+width: 350px;
 margin: auto;
 }
 
 .logo-container {
   margin-bottom:20px;
+  margin: auto;
 }
 
 .logo{
   width:200px;
   height: auto;
+  margin: auto;
+  padding: 20px;
 }
 
 .navbar-list {
@@ -49,7 +53,7 @@ margin: auto;
 }
 
 .navbar-item {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .navbar-link {
@@ -59,4 +63,6 @@ margin: auto;
 
 .navbar-link:hover {
   color: #ccc;
+  text-decoration: underline;
+  transform: scale(1.1);
 }
