@@ -11,7 +11,7 @@ import logo from './assets/logo.png';
 
 const App = () => {
   return (
-    <>
+    <div className='App'>
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" />
       </div>
@@ -24,7 +24,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 };
 

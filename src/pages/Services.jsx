@@ -3,7 +3,7 @@ import React from "react";
 
 function Services(){
     return(
-        <div>
+        <div className='page'>
         <div>
           <h2 className='title'>Services</h2>
           <p className='paragraph'>These are the services we provide at Steady State Fitness</p>

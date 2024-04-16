@@ -30,8 +30,9 @@ align-items: center;
 background-color:navy;
 padding: 10px;
 border: 2px grey;
-width: 350px;
+width: 450px;
 margin: auto;
+border-radius: 10px;
 }
 
 .logo-container {
@@ -40,7 +41,7 @@ margin: auto;
 }
 
 .logo{
-  width:200px;
+  width: 400px;
   height: auto;
   margin: auto;
   padding: 20px;
