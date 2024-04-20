@@ -67,3 +67,45 @@ border-radius: 10px;
   text-decoration: underline;
   transform: scale(1.1);
 }
+
+.service-card {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.service-card .front,
+.service-card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid navy;
+  border-radius: 10px;
+  background-color: white; /* Add this line to change the background color to blue */
+  backface-visibility: hidden;
+  transition: transform 0.6s; /* Add this line to animate the flip */
+}
+
+.service-card .back {
+  transform: rotateY(180deg);
+}
+
+.service-card.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.service-card.flipped .back {
+  transform: rotateY(0);
+}
+
+.services-list {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
