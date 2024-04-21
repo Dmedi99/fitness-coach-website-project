@@ -10,10 +10,11 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 50px;
   font-weight: bold;
   color: #333;
   text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .paragraph{
@@ -143,5 +144,5 @@ flex-wrap: wrap;
   font-weight: bold; /* Makes the text bold */
   margin-bottom: 10px; /* Adds some space below the title */
   text-align: center; /* Centers the text */
-  
+
 }

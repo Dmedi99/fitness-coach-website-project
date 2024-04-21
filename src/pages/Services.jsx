@@ -12,7 +12,7 @@ function Services(){
   return (
     <div className='page'>
       <div>
-        <h2 className='title'>Services</h2>
+        <h2 className='title'>Choose the right plan for YOU</h2>
         <p className='paragraph'>These are the services we provide at Steady State Fitness</p>
         <div className='services-list'>
           {services.map(service => (
