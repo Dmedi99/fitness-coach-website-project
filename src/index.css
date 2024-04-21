@@ -71,7 +71,7 @@ border-radius: 10px;
 
 .service-card {
   width: 400px;
-  height: 400px;
+  height: 500px;
   position: relative;
   perspective: 1000px;
   margin: 2px;
