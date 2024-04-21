@@ -109,3 +109,39 @@ justify-content: center;
 gap: 20px;
 flex-wrap: wrap;
 }
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  margin: 10 auto;
+}
+
+.contact-form textarea {
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  resize: vertical;
+  border: 2px solid navy;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #4CAF50; /* This is a green color, you can change it to any color you like */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049; /* Change the color to a darker shade of green */
+}
+
+.form-title {
+  font-size: 20px; /* Adjust this value to increase or decrease the font size */
+  font-weight: bold; /* Makes the text bold */
+  margin-bottom: 10px; /* Adds some space below the title */
+  text-align: center; /* Centers the text */
+  
+}
