@@ -129,14 +129,14 @@ flex-wrap: wrap;
 
 .contact-form button {
   padding: 10px;
-  background-color: #4CAF50; /* This is a green color, you can change it to any color you like */
+  background-color: navy; /* This is a green color, you can change it to any color you like */
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: #45a049; /* Change the color to a darker shade of green */
+  background-color: rgb(17, 17, 131); /* Change the color to a darker shade of green */
 }
 
 .form-title {
