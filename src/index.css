@@ -113,18 +113,24 @@ flex-wrap: wrap;
 
 .contact-form {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  width: 400px;
-  margin: 10 auto;
+  width: 300px;
+  margin: 0 auto;
 }
 
-.contact-form textarea {
-  height: 100px;
+.contact-form label{
   margin-bottom: 10px;
-  padding: 10px;
-  resize: vertical;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
   border: 2px solid navy;
+}
+
+contact-form textarea {
+  height: 100px;
+  resize: none;
 }
 
 .contact-form button {
@@ -137,6 +143,10 @@ flex-wrap: wrap;
 
 .contact-form button:hover {
   background-color: rgb(17, 17, 131); /* Change the color to a darker shade of green */
+}
+
+.send-email-button{
+  margin-top: 10px;
 }
 
 .form-title {
