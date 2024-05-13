@@ -14,11 +14,7 @@ function EmailForm() {
           })
       }
       return (
-    <div className='page'>
       <div>
-        <h2 className='title'>Contact Page</h2>
-        <p className='paragraph'>Let's connect to get your journey started.</p>
-        <h3 className='form-title'>Message:</h3>
         <form className='contact-form' onSubmit={sendEmail}>
           <label>
             Name:
@@ -47,7 +43,6 @@ function EmailForm() {
           <button className='send-email-button' type='submit'>Send</button>
         </form>
       </div>
-    </div>
       );
 
 }
