@@ -2,49 +2,57 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-.main-header{
+
+.main-header {
   font-size: 36px;
   text-align: center;
-
+  font-family: 'Roboto', sans-serif;
 }
 
 .title {
-  font-size: 60px;
-  font-weight: bold;
-  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+  color: whitesmoke;
   text-align: center;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 70px;
+  margin-top: -100px;
 }
 
-.paragraph{
-  font-size: 12px ;
-  color: navy;
-  text-align: center ;
+.paragraph {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: center;
+  margin-left: 70px;
 }
 
 
 .navbar {
-display: flex;
-flex-direction: column;
-align-items: center;
-background-color:navy;
-padding: 10px;
-border: 2px grey;
-width: 100%;
-height: 75px;
-margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:rgb(1, 1, 61);
+  padding: 10px;
+  border: 2px grey;
+  width: 100%;
+  height: 75px;
+  margin: auto;
 }
 
 .logo-container {
-  margin-bottom:20px;
-  margin: auto;
+  height: 60px;
+  width: auto;
+  background-color: white;
+  justify-content: center;
+  border-radius: 5px;
 }
 
-.logo{
-  width: 400px;
+.logo {
+  width: 130px;
   height: auto;
-  margin: auto;
+  margin-top: -10px;
   padding: 20px;
 }
 
@@ -52,10 +60,13 @@ margin: auto;
   display: flex;
   list-style-type: none;
   padding: 0;
+  margin-left: 320px;
 }
 
 .navbar-item {
+  font-family: 'Roboto', sans-serif;
   margin: 0 20px;
+  font-size: 20px;
 }
 
 .navbar-link {
@@ -67,6 +78,21 @@ margin: auto;
   color: #ccc;
   text-decoration: underline;
   transform: scale(1.1);
+}
+
+.consultation-button {
+  font-family: 'Roboto', sans-serif;
+  margin-left: auto;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.consultation-button:hover {
+  background-color: gray;
 }
 
 .service-card {
@@ -87,9 +113,11 @@ margin: auto;
   justify-content: center;
   border: 10px solid navy;
   border-radius: 10px;
-  background-color: white; /* Add this line to change the background color to blue */
+  background-color: white;
+  /* Add this line to change the background color to blue */
   backface-visibility: hidden;
-  transition: transform 0.6s; /* Add this line to animate the flip */
+  transition: transform 0.6s;
+  /* Add this line to animate the flip */
 }
 
 .service-card .back {
@@ -105,10 +133,10 @@ margin: auto;
 }
 
 .services-list {
-display: flex;
-justify-content: center;
-gap: 20px;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .contact-form {
@@ -118,9 +146,10 @@ flex-wrap: wrap;
   margin: 0 auto;
 }
 
-.contact-form label{
+.contact-form label {
   margin-bottom: 10px;
 }
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
@@ -135,33 +164,68 @@ contact-form textarea {
 
 .contact-form button {
   padding: 10px;
-  background-color: navy; /* This is a green color, you can change it to any color you like */
+  background-color: navy;
+  /* This is a green color, you can change it to any color you like */
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: rgb(17, 17, 131); /* Change the color to a darker shade of green */
+  background-color: rgb(17, 17, 131);
+  /* Change the color to a darker shade of green */
 }
 
-.send-email-button{
+.send-email-button {
   margin-top: 10px;
 }
 
 .form-title {
-  font-size: 20px; /* Adjust this value to increase or decrease the font size */
-  font-weight: bold; /* Makes the text bold */
-  margin-bottom: 10px; /* Adds some space below the title */
-  text-align: center; /* Centers the text */
+  font-size: 20px;
+  /* Adjust this value to increase or decrease the font size */
+  font-weight: bold;
+  /* Makes the text bold */
+  margin-bottom: 10px;
+  /* Adds some space below the title */
+  text-align: center;
+  /* Centers the text */
 
 }
 
 footer {
   width: 100%;
-  background-color: navy;
+  background-color:rgb(1, 1, 61);
   color: white;
   text-align: center;
   padding: 10px 0;
   margin-top: 300px;
 }
+
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  filter: grayscale(100%);
+}
+
+.sub-header {
+  background-image: url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  height: 250px;
+  margin-top: 100px;
+}
+
+
+.hero .button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+

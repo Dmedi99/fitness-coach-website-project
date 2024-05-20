@@ -7,15 +7,12 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
-import logo from './assets/logo.png';
+
 
 
 const App = () => {
   return (
     <div className='App'>
-      <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" />
-      </div>
       <Router>
         <NavBar />
         <Routes>
