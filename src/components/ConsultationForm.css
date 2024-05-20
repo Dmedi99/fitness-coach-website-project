@@ -1,0 +1,23 @@
+.consultation-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .consultation-form input,
+  .consultation-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .consultation-form label {
+    margin-bottom: 5px;
+    display: block;
+  }

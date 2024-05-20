@@ -2,7 +2,7 @@ import React from 'react';
 import ConsultationForm from '../components/ConsultationForm';
 
 
-function ConsultationFormPage(){
+function Consultation(){
     return(
         <>
         <ConsultationForm />
@@ -10,4 +10,4 @@ function ConsultationFormPage(){
     )
 }
 
-export default ConsultationFormPage;
+export default Consultation;

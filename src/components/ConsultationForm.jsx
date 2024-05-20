@@ -1,5 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import './ConsultationForm.css';
 
 
 function ConsultationForm() {
@@ -61,7 +62,7 @@ function ConsultationForm() {
                 </label>
                 <label>
                     How often do you exercise
-                    <select name='workout-frequecy' placeholder='select one'>
+                    <select name='workout_frequency' placeholder='select one'>
                         <option value='once a week'>Once a Week</option>
                         <option vlaue='2 or 3 times a week'>Two to three times a week</option>
                         <option value='4 or more times a week'>Four or more times a week</option>
@@ -70,7 +71,7 @@ function ConsultationForm() {
                 </label>
                 <label>
                     How often do you want to exercise?
-                    <select name='wished-workout-frequecy' placeholder='select one'>
+                    <select name='desired_workout_frequency' placeholder='select one'>
                         <option value='once a week'>Once a Week</option>
                         <option vlaue='2 or 3 times a week'>Two to three times a week</option>
                         <option value='4 or more times a week'>Four or more times a week</option>
@@ -108,6 +109,7 @@ function ConsultationForm() {
                     Any additional comments or questions?
                     <input type='text' name='comments' placeholder='Your answer' />
                 </label>
+                <button type='submit'>Submit</button>
             </form>
 
         </div>

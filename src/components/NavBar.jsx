@@ -24,7 +24,7 @@ function NavBar() {
           <Link to="/contact" className='navbar-link'>Contact</Link>
         </li>
       </ul>
-      <button className='consultation-button'>Free Consultation!</button>
+      <Link to="/consultation" className="consultation-button">Free Consultation</Link>
     </nav>
   );
 }
