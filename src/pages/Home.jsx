@@ -1,20 +1,24 @@
-// src/pages/Home.js
+// src/pages/Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Home.css';
 
 
-const Home = () => {
+
+function Home () {
   return (
-    <div className='page'>
+    <>
       <div className='hero'>
-        <h2 className='title'>In-Person & Online <br></br> Personal Training</h2>
-        <p className='paragraph'>With the power of consistency we will help you reach your fitness goals</p>
-        <div className='button-container'>
-          <Link to='/about' className='button'>Learn More</Link>
-          <Link to='/services' className='button'>Get Started</Link>
-        </div>
+        <h2 className='hero-title'>In-Person & Online <br></br> Personal Training</h2>
+        <p className='hero-paragraph'>With the power of consistency we will help you reach your fitness goals</p>
+        <Link to="/about">
+          <button className="learn-more">Learn More</button>
+        </Link>
+        <Link to="/services">
+          <button className="get-started">Get Started</button>
+        </Link>
       </div>
-    </div>
+    </>
   )
 };
 

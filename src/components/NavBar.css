@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.navbar {
+    position: static;
+    top: 0;
+    width: 100%;
+    background-color:   #000066;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo-container{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+    align-content: center;
+}
+
+.logo {
+    height: auto;
+    width: 150px;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    margin: 0; 
+    padding: 0;
+}
+
+.navbar-item {
+    margin: 0 15px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition:color 0.3s ease;
+}
+
+.consultation-button {
+    background-color: #6b6b47;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-right: 30px;
+}
+
+.consultaion-button:hover {
+    background-color: rgb(3, 3, 80);
+}

@@ -10,7 +10,7 @@ function Services(){
   ];
 
   return (
-    <div className='page'>
+<>
       <div className='sub-header'>
         <h2 className='title'>Choose the right plan for YOU</h2>
         <p className='paragraph'>These are the services we provide at Steady State Fitness</p>
@@ -20,7 +20,7 @@ function Services(){
             <ServiceCard key={service.name} name={service.name} description={service.description} />
           ))}
         </div>
-    </div>
+</>
   );
 }
 
