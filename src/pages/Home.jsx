@@ -5,18 +5,31 @@ import './Home.css';
 
 
 
-function Home () {
+function Home() {
   return (
     <>
-      <div className='hero'>
-        <h2 className='hero-title'>In-Person & Online <br></br> Personal Training</h2>
-        <p className='hero-paragraph'>With the power of consistency we will help you reach your fitness goals</p>
-        <Link to="/about">
-          <button className="learn-more">Learn More</button>
-        </Link>
-        <Link to="/services">
-          <button className="get-started">Get Started</button>
-        </Link>
+      <div className='hero-image'>
+        <div className='hero-text'>
+          <h1>In-Person & Online <br></br> Personal Training</h1>
+          <h2>Top-tier coaches using the power of consistency to help you reach your fitness goals</h2>
+          <div className='hero-buttons'>
+            <Link to="/about">
+              <button className="learn-more">Learn More</button>
+            </Link>
+            <Link to="/services">
+              <button className="get-started">Get Started</button>
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div className='intro-div'>
+        <h1>Steady State Fitness</h1>
+        <h2> Here we beleive in the power of consistency. Wehter you want to compete in marathons or keep up with your grandkids, we'll get you there through steady and reliable fitness programming</h2> 
+        <Link to='/about'>
+          <button className='learn-more'>Learn More</button>
+        </Link> 
+        
+
       </div>
     </>
   )

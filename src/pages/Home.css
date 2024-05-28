@@ -1,45 +1,65 @@
-.hero {
-    background-image: url('https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGd5bSUyMHRyYWluaW5nfGVufDB8fDB8fHww');
-    background-size: cover;
+.hero-image {
+    background-image: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    max-width: 100%;
+    max-height: auto;
     background-position: center;
-    width: 100%;
-    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+    align-items: center;    
+    justify-content: flex-start;
+  }
+  
+  .hero-text {
+    color: whitesmoke;
     padding: 20px;
-}
-
-.hero-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.hero-paragraph {
-    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 70px;
     margin-bottom: 30px;
-}
-
-.hero button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #007BFF; /* Primary color */
+  }
+  
+  .hero-text h2 {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .learn-more {
+    background-color: #a6a6a6;
+    color: black;
     border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 10px;
-}
-
-.hero button:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
-    transform: scale(1.05);
-}
-
-.hero button:focus {
-    outline: none;
-}
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  .learn-more:hover {
+    background-color: #cccccc;
+  }
+  
+  .get-started {
+    background-color:  #000080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 150px;
+    border-radius: 4px;
+  }
+  
+  .get-started:hover {
+    background-color:   #0000ff;
+  }
+  
