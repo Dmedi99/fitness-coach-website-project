@@ -6,9 +6,8 @@ const Contact = () => {
   return (
     <>
       <div className='sub-header'>
-        <h2 className='title'>Let's Connect</h2>
-        <p className='paragraph'>Let's connect to get your journey started.</p>
-        <h3 className='form-title'>Message:</h3>
+        <h2>Let's Connect</h2>
+        <p>Let's connect to get your journey started.</p>
       </div>
       <EmailForm />
     </>

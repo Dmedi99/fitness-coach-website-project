@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
+import Services from './Services';
 
 
 
@@ -22,17 +23,21 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className='intro-div'>
-        <h1>Steady State Fitness</h1>
-        <h2> Here we beleive in the power of consistency. Wehter you want to compete in marathons or keep up with your grandkids, we'll get you there through steady and reliable fitness programming</h2> 
-        <Link to='/about'>
-          <button className='learn-more'>Learn More</button>
-        </Link> 
-        
-
+      <div className='intro-text-wrapper'>
+        <img className='intro-image' alt='gym equipment' src='https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></img>
+        <div className='intro-text-box'>
+        <h2>Steady State Fitness</h2>
+        <p>Here we beleive in the power of consistency. Whether you want to compete in marathons or keep up with your grandkids, we'll get you there through steady and reliable fitness programming</p>
+        </div>
       </div>
+      <div className='services-wrapper'>
+        <h2>Our Services</h2>
+        <Services />
+      </div>
+
     </>
   )
 };
 
 export default Home;
+

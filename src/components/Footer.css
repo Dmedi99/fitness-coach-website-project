@@ -1,0 +1,27 @@
+.footer {
+    background-color:whitesmoke; 
+    color: #000080; 
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.footer header {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.footer .copyright {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: #000080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
