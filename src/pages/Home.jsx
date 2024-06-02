@@ -31,8 +31,14 @@ function Home() {
         </div>
       </div>
       <div className='services-wrapper'>
-        <h2>Our Services</h2>
         <Services />
+      </div>
+      <div className='support-wrapper'>
+        <img alt='' src=''></img>
+        <div className='support-text-box'>
+          <h2>Feeling Stuck?</h2>
+          <p>Let us help guide you in the right direction by contacting us or filling out our free consultation</p>
+          </div>
       </div>
 
     </>

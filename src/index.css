@@ -9,3 +9,9 @@ body {
   min-height: 100vh;
 }
 
+.subheader {
+  background-color: #000080;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}

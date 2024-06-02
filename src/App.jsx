@@ -6,7 +6,7 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Services from './pages/Services';
+import ServicesPage from './pages/ServicesPage';
 import Consultation from './pages/Consultation';
 
 
@@ -19,7 +19,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path='/services' element={<Services />} />
+          <Route path='/services' element={<ServicesPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path='/consultation' element={<Consultation />} />
         </Routes>

@@ -5,7 +5,7 @@
     padding: 16px;
   }
   
-  /* Responsive styling */
+
   @media (max-width: 768px) {
     .services-container {
       flex-direction: column;

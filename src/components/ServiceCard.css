@@ -12,12 +12,19 @@
   .service-card:hover {
     transform: translateY(-10px);
   }
+
+  .service-card h2{
+    text-align: center;
+  }
   
   .service-card h3 {
     margin-top: 0;
+    text-align: center;
   }
   
   .service-card p {
     margin: 0;
+    text-align: left;
+    line-height: 2;
   }
   
