@@ -25,7 +25,9 @@ function NavBar() {
   return (
     <nav className='navbar'>
       <div className={`logo-container ${isOpen ? 'active' : ''}`}>
-        <img src={logo} alt="Logo" className="logo" />
+        <Link to="/">
+        <img src={logo} alt="Logo" className="logo"/>
+        </Link>
       </div>
       <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
         <div></div>

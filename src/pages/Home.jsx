@@ -26,19 +26,23 @@ function Home() {
       <div className='intro-text-wrapper'>
         <img className='intro-image' alt='gym equipment' src='https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></img>
         <div className='intro-text-box'>
-        <h2>Steady State Fitness</h2>
-        <p>Here we beleive in the power of consistency. Whether you want to compete in marathons or keep up with your grandkids, we'll get you there through steady and reliable fitness programming</p>
+          <h2>Steady State Fitness</h2>
+          <p>Here we beleive in the power of consistency. Whether you want to compete in marathons or keep up with your grandkids, we'll get you there through steady and reliable fitness programming</p>
         </div>
       </div>
       <div className='services-wrapper'>
+        <h2 className='services-wrapper-header'>Our Services</h2>
         <Services />
       </div>
       <div className='support-wrapper'>
-        <img alt='' src=''></img>
         <div className='support-text-box'>
           <h2>Feeling Stuck?</h2>
           <p>Let us help guide you in the right direction by contacting us or filling out our free consultation</p>
-          </div>
+          <Link to="/contact">
+            <button className="contact-us">Contact Us</button>
+          </Link>
+        </div>
+        <img className='support-image' alt='hand reaching out in the ocean' src='https://images.unsplash.com/photo-1495427513693-3f40da04b3fd?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'></img>
       </div>
 
     </>
