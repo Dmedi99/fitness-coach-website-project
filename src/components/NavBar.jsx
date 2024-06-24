@@ -1,63 +1,34 @@
 // src/components/NavBar.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import './NavBar.css';
 
 function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [navActive, setNavActive] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const handleClick = () => {
+    setNavActive(!navActive);
+  }
 
   return (
-    <nav className='navbar'>
-      <div className={`logo-container ${isOpen ? 'active' : ''}`}>
+    <nav>
+      <div className='logo-container'>
         <Link to="/">
-        <img src={logo} alt="Logo" className="logo"/>
+          <img src={logo} alt="Logo" className="logo" />
         </Link>
       </div>
-      <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <ul className={`navbar-list ${isOpen ? 'active' : ''}`}>
-        <li className='navbar-item'>
-          <Link to="/" className='navbar-link' onClick={() => setIsOpen(false)}>Home</Link>
-        </li>
-        <li className='navbar-item'>
-          <Link to="/about" className='navbar-link' onClick={() => setIsOpen(false)}>Coaches</Link>
-        </li>
-        <li className='navbar-item'>
-          <Link to='/services' className='navbar-link' onClick={() => setIsOpen(false)}>Services</Link>
-        </li>
-        <li className='navbar-item'>
-          <Link to="/contact" className='navbar-link' onClick={() => setIsOpen(false)}>Contact</Link>
-        </li>
-        {isMobile && (
-          <li className='navbar-item'>
-            <Link to="/consultation" className="consultation-button mobile" onClick={() => setIsOpen(false)}>Free Consultation</Link>
+      <ul className={`nav-links ${navActive ? 'nav-active' : ''}`}>
+        {['Home', 'About', 'Services', 'Contact'].map((text, index) => (
+          <li key={index} style={{ animation: navActive ? `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s` : '' }}>
+            <Link to={`/${text.toLowerCase()}`}>{text}</Link>
           </li>
-        )}
+        ))}
       </ul>
-      {!isMobile && (
-        <Link to="/consultation" className="consultation-button">Free Consultation</Link>
-      )}
-      <div className={`close-btn ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-        &times;
+      <div className={`burger ${navActive ? 'toggle' : ''}`} onClick={handleClick}>
+        <div className='line1'></div>
+        <div className='line2'></div>
+        <div className='line3'></div>
       </div>
     </nav>
   );
