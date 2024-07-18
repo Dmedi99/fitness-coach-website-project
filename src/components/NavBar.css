@@ -1,95 +1,132 @@
-nav{
-  display:flex; 
-  justify-content: space-around;
+/* NavBar.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
-  min-height:11vh;
-  background-color: whitesmoke;   
+  min-height: 12vh;
+  background-color: whitesmoke;
+  padding: 0 20px;
 }
 
-.logo{
-height: 8vh;
+.logo {
+height:9vh;
 }
 
-.nav-links{
-  display:flex;
+.nav-links {
+  display: flex;
   justify-content: space-around;
-  width:30%;
+  width: 50%;
 }
-.nav-links li{
+
+.nav-links li {
   list-style: none;
 }
-.nav-links a{
-  color: #0d2244;
+
+.nav-links a {
+  color:#1c476b;
   text-decoration: none;
-  letter-spacing: 3px;
-  font-weight:bold;
-  font-size:14px;
-}
-.burger{
-  display:none;
-  cursor:pointer;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.burger div{
-  width:25px;
+.button a {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
   height: 3px;
-  background-color:#0d2244;
-  margin:5px;
-  transition: all 0.5s ease;
+  background-color: navy;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1024px){
-  .nav-links{
-      width:60%;
+@media screen and (max-width: 1024px) {
+  .nav-links {
+      width: 60%;
   }
 }
 
-@media screen and (max-width:768px){
-  body{
-      overflow-x:hidden;
+@media screen and (max-width: 768px) {
+  body {
+      overflow-x: hidden;
   }
-  .nav-links{
-      position:absolute;
-      right: 0px;
-      height: 92vh; 
-      top: 8vh;
-      background-color: whitesmoke; 
-      display:flex;
+
+  .nav-links {
+      position: absolute;
+      right: 0;
+      height: 92vh;
+      top: 12vh;
+      background-color: #5d4954;
+      display: flex;
       flex-direction: column;
-      align-items:center;
+      align-items: center;
       width: 50%;
       transform: translateX(100%);
-      transition: transform 0.3s ease-in;
+      transition: transform 0.5s ease-in;
   }
-  .nav-links li{
+
+  .nav-links li {
       opacity: 0;
   }
-  .burger{
-      display:block;
+
+  .burger {
+      display: block;
   }
 }
 
-.nav-active{
-  transform: translate(0%);
+.nav-active {
+  transform: translateX(0%);
 }
 
-@keyframes navLinkFade{
-  from{
+.nav-active .nav-links li {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes navLinkFade {
+  from {
       opacity: 0;
       transform: translateX(50px);
   }
-  to{
+  to {
       opacity: 1;
-      transform: translateX(0px);
+      transform: translateX(0);
   }
 }
 
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5px,6px);
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
+
+.toggle .line2 {
   opacity: 0;
 }
-.toggle .line3{
-  transform: rotate(45deg) translate(-5px,-6px);
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 370px) {
+  .button a {
+      padding: 5px 10px;
+      font-size: 12px;
+  }
 }
